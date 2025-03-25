@@ -9,7 +9,7 @@
     include(__DIR__ . '/conexion_bd.php');
     include(__DIR__ . '/controlador_registrar_usuario.php');
     ?>
-</head>
+</head> 
 <body>
     
     <div class="main">
