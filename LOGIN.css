@@ -272,7 +272,7 @@ body {
     position: relative;
     width: 400px;
     height: 500px;
-    background: #000;
+    background: #636362;
     box-shadow: 0 0 50px #278257;
     border-radius: 20px;
     padding: 40px;
@@ -438,4 +438,73 @@ button {
 .singUp-link p a:hover {
     text-decoration: underline;
 }
+
+
+
+/* desde aqui inicia el media query */
+@media (max-width: 1250px) {
+    .main {
+        width: 100%;
+        padding: 20px;
+    }
+    @media (max-width: 1024px) {
+        .main {
+            background-attachment: scroll; /* Mejor rendimiento en tablet */
+            background-size: contain; /* Opcional: muestra toda la imagen */
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .main {
+            height: auto;
+            padding-bottom: 50%; /* Mantiene proporción para móviles */
+            background-size: cover;
+            background-position: top center; /* Ajusta según necesidad */
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .main {
+            padding-bottom: 70%; /* Más altura en móviles pequeños */
+            background: linear-gradient(to top, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.7) 50%), 
+                        url(img/igualdad\ de\ genero.jpg);
+            background-size: cover;
+            background-position: 30% center; /* Ajuste fino para móviles */
+        }
+    }
+
+    .navbar, .content {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .wrapper {
+        position: relative;
+        right: auto;
+        top: auto;
+        transform: none;
+        margin: 30px auto;
+    }
+    
+    .icon img {
+        width: 147px;
+    }
+    
+    .content h1, .content .par {
+        text-align: center;
+    }
+}
+
+/* Ajustes para móviles muy pequeños */
+@media (max-width: 480px) {
+    .wrapper {
+        width: 95%;
+        padding: 20px;
+    }
+    
+    .content h1 {
+        font-size: 1.8rem;
+    }
+}
+
 

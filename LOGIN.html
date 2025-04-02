@@ -9,7 +9,7 @@
     include(__DIR__ . '/conexion_bd.php');
     include(__DIR__ . '/controlador_registrar_usuario.php');
     ?>
-</head> 
+</head>
 <body>
     
     <div class="main">
@@ -40,11 +40,7 @@
                                 <label>Correo electrónico</label>
                             </div>
                             <div class="input-group">
-                                <input type="password" name="contrasena_login" id="password" required>
-                                <label>Contraseña</label>
-                            </div>
-                            <div class="show-remember">
-                                <button type="button" onclick="togglePassword('password')">Mostrar Contraseña</button>
+                                <input type="password" id="password" placeholder="Contraeña">
                             </div>
                             <button type="submit">Login</button>
                             <div class="singUp-link">
@@ -72,17 +68,12 @@
                                 <label>Correo electrónico</label>
                             </div>
                             <div class="input-group">
-                                <input type="password" name="contrasena" id="registroPassword" required minlength="8">
-                                <label>Contraseña</label>
+                                <input type="password" id="registroPassword" placeholder="Contraseña">
                             </div>
                             <div class="input-group">
-                                <input type="password" name="confirmarcontrasena" id="confirmarPassword" required minlength="8">
-                                <label>Confirmar Contraseña</label>
+                                <input type="password" id="confirmarPassword" placeholder="Confirme contraseña">
                             </div>
 
-                            <div class="show-password">
-                                <button type="button" onclick="togglePassword('registroPassword', 'confirmarPassword')">Mostrar Contraseñas</button>
-                            </div>
                             <p>Al crear cuenta aceptas nuestros</p><a href="terminos_condiciones.html">Términos y condiciones</a>
                             <button type="submit" name="registro">Registrarse</button>
                             <div class="singUp-link">
@@ -96,6 +87,7 @@
             </div>
         </div>
     </div>
+    
 
     <script src="LOGIN.js"></script>
     <script>
